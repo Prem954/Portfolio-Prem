@@ -146,33 +146,52 @@ function scrollFunction() {
   }
 }
 // When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener("click",function(){
+// Scroll to top on button click
+mybutton.addEventListener("click", function () {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const filterButtons = document.querySelectorAll('.filter-item');
-    const projects = document.querySelectorAll('.post');
+document.addEventListener('DOMContentLoaded', function () {
+  const filterButtons = document.querySelectorAll('.filter-item');
+  const projects = document.querySelectorAll('.post');
 
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Remove active class from all buttons
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            // Add active class to clicked button
-            button.classList.add('active');
+  // 👇 Set "ml" filter as default active and show only ML projects
+  const defaultFilter = "ml";
 
-            const filterValue = button.getAttribute('data-filter');
+  filterButtons.forEach(btn => {
+    if (btn.getAttribute('data-filter') === defaultFilter) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
 
-            projects.forEach(project => {
-                if (filterValue === 'all' || project.classList.contains(filterValue)) {
-                    project.style.display = 'block';
-                } else {
-                    project.style.display = 'none';
-                }
-            });
-        });
+  projects.forEach(project => {
+    if (project.classList.contains(defaultFilter)) {
+      project.style.display = 'block';
+    } else {
+      project.style.display = 'none';
+    }
+  });
+
+  // 👇 Filtering logic on button click
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filterValue = button.getAttribute('data-filter');
+
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      projects.forEach(project => {
+        if (filterValue === 'all' || project.classList.contains(filterValue)) {
+          project.style.display = 'block';
+        } else {
+          project.style.display = 'none';
+        }
+      });
     });
+  });
 });
 
 // Update the form submission handler
@@ -248,50 +267,4 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// Scroll to top on button click
-mybutton.addEventListener("click", function () {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-});
 
-document.addEventListener('DOMContentLoaded', function () {
-  const filterButtons = document.querySelectorAll('.filter-item');
-  const projects = document.querySelectorAll('.post');
-
-  // 👇 Set "ml" filter as default active and show only ML projects
-  const defaultFilter = "ml";
-
-  filterButtons.forEach(btn => {
-    if (btn.getAttribute('data-filter') === defaultFilter) {
-      btn.classList.add('active');
-    } else {
-      btn.classList.remove('active');
-    }
-  });
-
-  projects.forEach(project => {
-    if (project.classList.contains(defaultFilter)) {
-      project.style.display = 'block';
-    } else {
-      project.style.display = 'none';
-    }
-  });
-
-  // 👇 Filtering logic on button click
-  filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const filterValue = button.getAttribute('data-filter');
-
-      filterButtons.forEach(btn => btn.classList.remove('active'));
-      button.classList.add('active');
-
-      projects.forEach(project => {
-        if (filterValue === 'all' || project.classList.contains(filterValue)) {
-          project.style.display = 'block';
-        } else {
-          project.style.display = 'none';
-        }
-      });
-    });
-  });
-});
