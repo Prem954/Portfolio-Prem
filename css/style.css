@@ -102,14 +102,18 @@ body {
 /* adding animation to home section image  */
 .home img {
   border-radius: 50%;
-  border: 4px solid #6f34fe;
-  box-shadow: 0 0 20px rgba(111, 52, 254, 0.2);
+  border: 5px solid #6f34fe;
+  box-shadow: 0 0 30px rgba(111, 52, 254, 0.3);
   animation: floatimg 4s ease-in-out infinite;
   object-fit: cover;
-  width: 400px;
-  height: 400px;
-  margin-top: 30px;
+  width: 350px;
+  height: 350px;
+  display: block;
+  margin: 40px auto;
 }
+
+
+
 
 @keyframes floatimg {
   0% {
@@ -1322,4 +1326,10 @@ section {
 
 .contact-details a:hover {
   color: #ff0000; /* Optional: Slight color change on hover */
+}
+
+
+html {
+  scroll-padding-top: 50px; 
+  scroll-behavior: smooth;
 }
