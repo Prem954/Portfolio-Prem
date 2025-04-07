@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Prem Rauniyar</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" as="style">
+
+    <!-- Add these near the top of your head section -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  </head>
+  <body>
+    <!-- Your existing content -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+          >Prem Rauniyar</a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4 me-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#research">Research</a>
+            </li>
+          </ul>
+          <a
+            class="c-btn py-2 px-4 rounded-pill d-none d-md-block"
+            href="#contact"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div
+          class="col-10 col-md-6 text-center text-md-start"
+          data-aos="slide-right"
+        >
+          <h2 style="color: #3f396d">
+            Hello! I Am <br /><span class="c-orange">Prem Rauniyar</span>
+          </h2>
+          <p class="text-muted">
+            Greetings! I'm an ambitious B.Tech student majoring in Computer Science and Engineering, dedicated to staying at the forefront of technological innovation. With a keen eye for detail and a relentless drive for improvement, I have honed my expertise in C++, web design, and full-stack development and hold proficiency in both frontend and backend development. Additionally, I excel as a database designer, leveraging these skills to create seamless, efficient, and impactful software solutions. Throughout my academic journey, I've demonstrated theoretical understanding and applied my knowledge in real-world scenarios, completing various projects that showcase my abilities and dedication to the craft. This hands-on experience has instilled in me a robust problem-solving approach and an unyielding commitment to excellence.
+            <br><br>
+            As I prepare to transition from academia to the professional realm, my goal is to channel my skills and determination into contributing to cutting-edge projects and initiatives. I am eager to collaborate with teams that share a vision for pushing the boundaries of what technology can achieve. Seeking new opportunities to learn and grow, I'm open to engaging with industry professionals, exploring potential partnerships, and gaining further insights into the fascinating world of technology.
+          </p>
+          
+          <!-- Update the social icons container -->
+          <div class="social-icons-container mt-4 mb-4">
+            <!-- GitHub -->
+            <a href="https://github.com/Prem954" target="_blank" class="social-icon">
+              <i class="bi bi-github"></i>
+            </a>
+            
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/premrauniyar/" target="_blank" class="social-icon">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/itsprem12" target="_blank" class="social-icon">
+              <i class="bi bi-facebook"></i>
+            </a>
+            
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/its_prem12/" target="_blank" class="social-icon">
+                          <i class="bi bi-instagram"></i>
+                        </a>
+            
+          </div>
+
+          <a href="#contact" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill text-decoration-none">
+            Hire Me
+          </a>
+          <a href="" class="link ms-4 d-none">See My Work</a>
+        </div>
+        <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="images/prem.jpg" class="img-fluid" alt="" loading="lazy" />
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here -->
+    
+    <!-- Education section starts -->
+    <section class="education py-5" id="education">
+      <div class="heading text-center mb-5">
+        <small>Academic Background</small>
+        <h3>Education</h3>
+      </div>
+
+      <div class="container-fluid px-lg-5 px-md-3 px-sm-2">
+        <div class="row justify-content-center align-items-center g-4">
+          <!-- Grade X Education (First) -->
+          <div class="col-12 col-md-6 col-lg-6" data-aos="fade-up">
+            <div class="education-card">
+              <div class="education-period">Mar 2018 – Jun 2019</div>
+              <div class="education-location">Biratnagar, Nepal</div>
+              <h4>GRADE X, National Examination Board (NEB)</h4>
+              <div class="education-school">Arpan English School</div>
+              <div class="education-grade">Cumulative GPA: 3.6/4</div>
+              <div class="education-achievements">
+                <ul class="list-unstyled mt-3">
+                  <li>• Rank 1 in School</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grade XII Education (Second) -->
+          <div class="col-12 col-md-6 col-lg-6" data-aos="fade-up">
+            <div class="education-card">
+              <div class="education-period">Aug 2019 – Jul 2021</div>
+              <div class="education-location">Biratnagar, Nepal</div>
+              <h4>GRADE XII, National Examination Board (NEB)</h4>
+              <div class="education-school">Shikshadeep Higher Secondary School</div>
+              <div class="education-grade">Cumulative GPA: 3.29/4</div>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+         <!-- BTech Education (Third) -->
+<div class="d-flex justify-content-center">
+  <div class="col-12 col-md-8 col-lg-6" data-aos="fade-up">
+    <div class="education-card text-center">
+      <div class="education-period">Aug 2021 – Jul 2025</div>
+      <div class="education-location">Bengaluru, India</div>
+      <h4>Bachelor of Technology in Computer Science and Engineering</h4>
+      <div class="education-school">Jain Deemed to Be University</div>
+      <div class="education-grade">Cumulative GPA: 8.6/10</div>
+      <div class="education-achievements">
+        <ul class="list-unstyled mt-3">
+          <li>• Full scholarship recipient through Pragati Scholarship (IND-SAT) funded by Study in India (EDCIL)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Education section ends -->
+
+    <!-- skill section starts -->
+    <section class="skill py-5" id="about">
+      <div class="heading text-center mb-5">
+        <small>My Skills</small>
+        <h3>Technical & Professional Skills</h3>
+      </div>
+      
+      <div class="container-fluid px-lg-5 px-md-3 px-sm-2">
+        <div class="row justify-content-center align-items-center g-4">
+          <!-- Technical Skills -->
+          <div class="col-12 col-md-6 col-lg-6" data-aos="slide-right">
+            <div class="skills-list h-100">
+              <h4 class="section-subheading mb-4">Technical Skills</h4>
+              
+              <div class="skill-category mb-4">
+                <strong>Programming Languages:</strong>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge rounded-pill bg-light text-dark">Python</span>
+                  <span class="badge rounded-pill bg-light text-dark">C++</span>
+                  <span class="badge rounded-pill bg-light text-dark">C</span>
+                  <span class="badge rounded-pill bg-light text-dark">HTML</span>
+                  <span class="badge rounded-pill bg-light text-dark">CSS</span>
+                  <span class="badge rounded-pill bg-light text-dark">JavaScript</span>
+                  <span class="badge rounded-pill bg-light text-dark">Machine Learning</span>
+                </div>
+              </div>
+
+              <div class="skill-category mb-4">
+                <strong>Tools:</strong>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge rounded-pill bg-light text-dark">Node</span>
+                  <span class="badge rounded-pill bg-light text-dark">React</span>
+                  <span class="badge rounded-pill bg-light text-dark">Excel</span>
+                  <span class="badge rounded-pill bg-light text-dark">SQL</span>
+                  <span class="badge rounded-pill bg-light text-dark">MongoDB</span>
+                  <span class="badge rounded-pill bg-light text-dark">Express</span>
+                  <span class="badge rounded-pill bg-light text-dark">VS Code</span>
+                  <span class="badge rounded-pill bg-light text-dark">Git</span>
+                  <span class="badge rounded-pill bg-light text-dark">Canva</span>
+                  <span class="badge rounded-pill bg-light text-dark">Microsoft Office</span>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <strong>Software Testing:</strong>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge rounded-pill bg-light text-dark">Integration Testing</span>
+                  <span class="badge rounded-pill bg-light text-dark">Regression Testing</span>
+                  <span class="badge rounded-pill bg-light text-dark">Unit Testing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="col-12 col-md-6 col-lg-6" data-aos="slide-left">
+            <div class="soft-skills h-100">
+              <h4 class="section-subheading mb-4">Soft Skills</h4>
+              
+              <div class="skill-category mb-4">
+                <strong>Professional Competencies:</strong>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge rounded-pill bg-primary">Leadership</span>
+                  <span class="badge rounded-pill bg-primary">Teamwork</span>
+                  <span class="badge rounded-pill bg-primary">Adaptability</span>
+                  <span class="badge rounded-pill bg-primary">Continuous Learning</span>
+                  <span class="badge rounded-pill bg-primary">Driving Initiatives</span>
+                  <span class="badge rounded-pill bg-primary">Effective Writing</span>
+                  <span class="badge rounded-pill bg-primary">Verbal Communication</span>
+                  <span class="badge rounded-pill bg-primary">Analytical Thinking</span>
+                  <span class="badge rounded-pill bg-primary">Decision Making</span>
+                  <span class="badge rounded-pill bg-primary">Attention to Detail</span>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <strong>Additional Skills:</strong>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge rounded-pill bg-primary">Problem Solving</span>
+                  <span class="badge rounded-pill bg-primary">Critical Thinking</span>
+                  <span class="badge rounded-pill bg-primary">Time Management</span>
+                  <span class="badge rounded-pill bg-primary">Project Management</span>
+                  <span class="badge rounded-pill bg-primary">Research</span>
+                  <span class="badge rounded-pill bg-primary">Content Writing</span>
+                  <span class="badge rounded-pill bg-primary">Content Adaptation & Implementation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skill section ends -->
+
+<!-- portfolio section starts here -->
+<section class="portfolio" id="portfolio">
+  <div class="heading text-center pt-5">
+    <small>Recent Work</small>
+    <h3>My Projects</h3>
+  </div>
+
+  <div id="myBtnContainer" class="text-center mt-4">
+    <button class="filter-item" data-filter="all">All</button>
+    <button class="filter-item active" data-filter="ml">ML</button>
+    <button class="filter-item" data-filter="webapp">Web Apps</button>
+    <button class="filter-item" data-filter="cyber">CyberSecurity</button>
+    <button class="filter-item" data-filter="python">Python</button>
+    <button class="filter-item" data-filter="ext">Browser Extension</button>
+  </div>
+  
+  <div class="portfolio-body">
+    <div class="row justify-content-evenly px-4">
+
+<!-- AgeGuard - Advanced 18+ Content Blocking and Safe Browsing Extension -->
+  <div class="post col-md-6 ext ml cyber all col-10 mt-4" data-aos="fade-up">
+   <div class="card">
+    <img src="images/AgeGuard.jpg" class="card-img-top" alt="AgeGuard" style="height: 250px; object-fit: cover;">
+    <div class="card-body text-center">
+      <h4 class="card-title">AgeGuard: Advanced 18+ Content Blocking and Safe Browsing Extension</h4>
+      <span class="badge bg-secondary badge-pill">JavaScript</span>
+      <span class="badge bg-secondary badge-pill">HTML</span>
+      <span class="badge bg-secondary badge-pill">CSS</span>
+      <span class="badge bg-secondary badge-pill">Chrome APIs</span>
+      <span class="badge bg-secondary badge-pill">Face-api.js</span>
+      <span class="badge bg-secondary badge-pill">WebRTC</span>
+      <br>
+      <button class="link read-more-btn mt-3" data-bs-toggle="collapse" data-bs-target="#AgeGuard">
+        Read More
+      </button>
+      <div class="collapse mt-3" id="AgeGuard">
+        <ul class="text-start list-unstyled">
+          <li>• Designed a privacy-first Chrome extension that uses face detection to identify user age in real time.</li>
+          <li>• Blocks access to adult content if the detected user is underage using webcam.</li>
+          <li>• Integrated face-api.js with Chrome APIs to perform real-time age classification.</li>
+          <li>• Technologies Used: JavaScript, HTML, CSS, JSON, face-api.js, WebRTC, Manifest V3</li>
+          <li class="mt-2">
+            <a href="https://github.com/Prem954/AgeGuard-Advanced-18-Content-Blocking-and-Safe-Browsing-Extension" target="_blank" class="source-code-link">
+              <i class="bi bi-github"></i> View Source Code
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+     
+      <!-- AgriRec-Decision-Tree-Based-Agricultural-Crop-Recommendation-with-Web-Platform-Integration -->
+      <div class="post col-md-6 ml webapp all col-10 mt-4" data-aos="fade-up">
+        <div class="card">
+          <img src="images/AgriRec.jpg" class="card-img-top" alt="AgriRec" style="height: 250px; object-fit: cover;">
+          <div class="card-body text-center">
+            <h4 class="card-title">AgriRec: Decision Tree Based Agricultural Crop Recommendation with Web Platform Integration</h4>
+            <span class="badge bg-secondary badge-pill">Machine Learning</span>
+            <span class="badge bg-secondary badge-pill">Python</span>
+            <span class="badge bg-secondary badge-pill">Flask</span>
+            <span class="badge bg-secondary badge-pill">Decision Tree Classifier</span>
+            <br>
+            <button class="link read-more-btn mt-3" data-bs-toggle="collapse" data-bs-target="#AgriRec">
+              Read More
+            </button>
+            <div class="collapse mt-3" id="AgriRec">
+              <ul class="text-start list-unstyled">
+                <li>• Uses Decision Tree Classifier to recommend the best crop.</li>
+                <li>• Takes input like soil nutrients (N, P, K) and pH value.</li>
+                <li>• Considers environmental factors like rainfall, humidity, and temperature.</li>
+                <li>• Technologies Used: Python, Flask, Scikit-learn</li>
+                <li class="mt-2">
+                  <a href="https://github.com/Prem954/AgriRec-Decision-Tree-Based-Agricultural-Crop-Recommendation-with-Web-Platform-Integration" target="_blank" class="source-code-link">
+                    <i class="bi bi-github"></i> View Source Code
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CardioVisionary-Boosting-Based-Cardiac-Disease-Prediction-using-ML-Techniques -->
+      <div class="post col-md-6 ml webapp all col-10 mt-4" data-aos="fade-up">
+        <div class="card">
+          <img src="images/Cardiovisionary.jpg" class="card-img-top" alt="CardioVisionary" style="height: 250px; object-fit: cover;">
+          <div class="card-body text-center">
+            <h4 class="card-title">CardioVisionary: Boosting Based Cardiac Disease Prediction using ML Techniques</h4>
+            <span class="badge bg-secondary badge-pill">Machine Learning</span>
+            <span class="badge bg-secondary badge-pill">Python</span>
+            <span class="badge bg-secondary badge-pill">Flask</span>
+            <span class="badge bg-secondary badge-pill">Scikit-learn</span>
+            <span class="badge bg-secondary badge-pill">Gradient Boosting</span>
+            <br>
+            <button class="link read-more-btn mt-3" data-bs-toggle="collapse" data-bs-target="#CardioVisionary">
+              Read More
+            </button>
+            <div class="collapse mt-3" id="CardioVisionary">
+              <ul class="text-start list-unstyled">
+                <li>• Predicting cardiac diseases using ML boosting techniques.</li>
+                <li>• Evaluated models like Logistic Regression, SVM, and Random Forest.</li>
+                <li>• Gradient Boosting achieved the best performance and was deployed.</li>
+                <li>• Integrated a user-friendly web interface for real-time predictions.</li>
+                <li>• Technologies Used: Python, Flask, Scikit-learn</li>
+                <li class="mt-2">
+                  <a href="https://github.com/Prem954/CardioVisionary-Boosting-Based-Cardiac-Disease-Prediction-using-ML-Techniques" target="_blank" class="source-code-link">
+                    <i class="bi bi-github"></i> View Source Code
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Motion Detector - Chrome Extension -->
+       <div class="post col-md-6 ext all col-10 mt-4" data-aos="fade-up">
+        <div class="card">
+          <img src="images/MotionDetector.jpg" class="card-img-top" alt="Motion-Detector-Chrome-Extension" style="height: 250px; object-fit: cover;">
+          <div class="card-body text-center">
+            <h4 class="card-title">MotionDetector: A Chrome Extension for Real-Time Webcam-Based Movement Detection</h4>
+            <span class="badge bg-secondary badge-pill">JavaScript</span>
+            <span class="badge bg-secondary badge-pill">HTML</span>
+            <span class="badge bg-secondary badge-pill">CSS</span>
+            <span class="badge bg-secondary badge-pill">Chrome APIs</span>
+            <br>
+            <button class="link read-more-btn mt-3" data-bs-toggle="collapse" data-bs-target="#MotionDetector">
+              Read More
+            </button>
+            <div class="collapse mt-3" id="MotionDetector">
+              <ul class="text-start list-unstyled">
+                <li>• Built a lightweight Chrome Extension that uses the webcam to detect motion in real-time.</li>
+                <li>• Implemented a responsive UI that updates live status: “Motion Detected!” or “No motion detected.</li>
+                <li>• Designed for simplicity—no external dependencies, just plug-and-play.</li>
+                <li>• Technologies Used: JavaScript, HTML, CSS, Chrome Extension APIs</li>
+                <li class="mt-2">
+                  <a href="https://github.com/Prem954/Motion-Detector-Chrome-Extension" target="_blank" class="source-code-link">
+                    <i class="bi bi-github"></i> View Source Code
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+       <!-- SafeBrowse - Real-Time Malicious URL Detector -->
+       <div class="post col-md-6 ext cyber all col-10 mt-4" data-aos="fade-up">
+        <div class="card">
+          <img src="images/SafeBrowse.jpg" class="card-img-top" alt="SafeBrowse" style="height: 250px; object-fit: cover;">
+          <div class="card-body text-center">
+            <h4 class="card-title">SafeBrowse: A Chrome Extension for Real-Time Malicious URL Detection</h4>
+            <span class="badge bg-secondary badge-pill">JavaScript</span>
+            <span class="badge bg-secondary badge-pill">HTML</span>
+            <span class="badge bg-secondary badge-pill">CSS</span>
+            <span class="badge bg-secondary badge-pill">Chrome APIs</span>
+            <span class="badge bg-secondary badge-pill">JSON</span>
+            <br>
+            <button class="link read-more-btn mt-3" data-bs-toggle="collapse" data-bs-target="#SafeBrowse">
+              Read More
+            </button>
+            <div class="collapse mt-3" id="SafeBrowse">
+              <ul class="text-start list-unstyled">
+                <li>• Developed a Chrome browser extension that protects users from phishing, malware, and scam websites.</li>
+                <li>• Redirects users to a custom warning page when malicious activity is detected.</li>
+                <li>• Continuously monitors URLs in real-time and blocks access to unsafe domains.</li>
+                <li>• Technologies Used: JavaScript, Manifest V3, HTML, CSS, JSON, Chrome Extension API</li>
+                <li class="mt-2">
+                  <a href="https://github.com/Prem954/SafeBrowse-Real-Time-Malicious-URL-Detector" target="_blank" class="source-code-link">
+                    <i class="bi bi-github"></i> View Source Code
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- SecureLogger: AI-Based Keystroke Monitoring & Bot Detection -->
+<div class="post col-md-6 ml cyber all col-10 mt-4" data-aos="fade-up">
+<div class="card">
+  <img src="images/SecureLogger.jpg" class="card-img-top" alt="SecureLogger" style="height: 250px; object-fit: cover;">
+    <div class="card-body text-center">
+      <h4 class="card-title">SecureLogger: AI-Based Keystroke Monitoring & Bot Detection</h4>
+      <span class="badge bg-secondary badge-pill">Python</span>
+      <span class="badge bg-secondary badge-pill">Machine Learning</span>
+      <span class="badge bg-secondary badge-pill">AES Encryption</span>
+      <span class="badge bg-secondary badge-pill">Random Forest</span>
+      <br>
+      <button class="link read-more-btn mt-3" data-bs-toggle="collapse" data-bs-target="#SecureLogger">
+        Read More
+      </button>
+      <div class="collapse mt-3" id="SecureLogger">
+        <ul class="text-start list-unstyled">
+          <li>• Advanced AI-enhanced keystroke logger that detects bots using keystroke dynamics.</li>
+          <li>• ML model (Random Forest) classifies human vs. bot typing behavior in real time.</li>
+          <li>• Features automatic log clearance and real-time anomaly detection.</li>
+          <li>• Dataset generated from real and synthetic keystrokes with preprocessing.</li>
+          <li>• Technology Used: Python (pynput, numpy, pandas), Scikit-learn, PyCryptodome.</li>
+          <li class="mt-2">
+            <a href="https://github.com/Prem954/SecureLogger-AI-Enhanced-Keystroke-Monitoring-Protection" target="_blank" class="source-code-link">
+              <i class="bi bi-github"></i> View Source Code
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Friday - AI Voice Assistant -->
+<div class="post col-md-6 python all col-10 mt-4" data-aos="fade-up">
+<div class="card">
+<img src="images/Friday.jpg" class="card-img-top" alt="Friday - AI Voice Assistant" style="height: 250px; object-fit: cover;">
+<div class="card-body text-center">
+  <h4 class="card-title">Friday: Your Personal AI Voice Assistant for Smarter Everyday Taskst</h4>
+  <span class="badge bg-secondary badge-pill">Python</span>
+  <span class="badge bg-secondary badge-pill">SpeechRecognition</span>
+  <span class="badge bg-secondary badge-pill">pyttsx3</span>
+  <span class="badge bg-secondary badge-pill">Tkinter</span>
+  <span class="badge bg-secondary badge-pill">Wikipedia API</span>
+  <br>
+  <button class="link read-more-btn mt-3" data-bs-toggle="collapse" data-bs-target="#fridayDetails">
+    Read More
+  </button>
+  <div class="collapse mt-3" id="fridayDetails">
+    <ul class="text-start list-unstyled">
+      <li>• Designed a voice assistant to automate tasks like web search and note-taking.</li>
+      <li>•Integrated speech recognition for seamless, real-time, hands-free user interaction and control.</li>
+      <li>• Developed a GUI using Tkinter for an interactive user experience.</li>
+      <li>• Technologies Used: Python, SpeechRecognition, pyttsx3, Tkinter, Wikipedia API</li>
+      <li class="mt-2">
+        <a href="https://github.com/Prem954/Friday-Voice-Assistant" target="_blank" class="source-code-link">
+          <i class="bi bi-github"></i> View Source Code
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+
+
+<!-- SecureLoginMFA: Secure Login System with Multi-Factor Authentication -->
+<div class="post col-md-6 python cyber all col-10 mt-4" data-aos="fade-up">
+<div class="card">
+<img src="images/SecureLoginMFA.jpg" class="card-img-top" alt="Secure Login System" style="height: 250px; object-fit: cover;">
+<div class="card-body text-center">
+  <h4 class="card-title"> SecureLogin: A Flask-based Multi-Factor Authentication (MFA) System </h4>
+  <span class="badge bg-secondary badge-pill">Python</span>
+  <span class="badge bg-secondary badge-pill">Flask</span>
+  <span class="badge bg-secondary badge-pill">Email OTP</span>
+  <span class="badge bg-secondary badge-pill">MFA</span>
+  <br>
+  <button class="link read-more-btn mt-3" data-bs-toggle="collapse" data-bs-target="#SecureLoginMFA">
+    Read More
+  </button>
+  <div class="collapse mt-3 text-start" id="SecureLoginMFA">
+    <ul class="list-unstyled">
+      <li>• Built a robust Flask-based login system with Multi-Factor Authentication (MFA) via email OTP.</li>
+      <li>• Implements secure user authentication with encrypted password storage and OTP verification.</li>
+      <li>• Prevents brute-force attacks and unauthorized access through session control and login attempt limits.</li>
+      <li>• Customizable settings for OTP expiry, email configuration, and UI elements.</li>
+      <li>• Ideal for personal, educational, and corporate login systems requiring enhanced security.</li>
+      <li>• Technology Used: Flask, Python, SQLite, smtplib, hashlib, secrets.</li>
+      <li class="mt-2">
+        <a href="https://github.com/Prem954/Secure-Login-System-with-Multi-Factor-Authentication-MFA-Using-Flask" target="_blank" class="source-code-link">
+          <i class="bi bi-github"></i> View Source Code
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+      <!-- Software-Requirement-Specification-Document-Analysis-and-Parameter-Identification-Using-ML -->
+      <div class="post col-md-6 ml all col-10 mt-4" data-aos="fade-up">
+        <div class="card">
+          <img src="images/SRS.jpg" class="card-img-top" alt="Software Requirement Specification" style="height: 250px; object-fit: cover;">
+          <div class="card-body text-center">
+            <h4 class="card-title">Software Requirement Specification Document Analysis and Parameter Identification Using ML</h4>
+            <span class="badge bg-secondary badge-pill">Machine Learning</span>
+            <span class="badge bg-secondary badge-pill">PyMuPDF</span>
+            <span class="badge bg-secondary badge-pill">Python</span>
+            <span class="badge bg-secondary badge-pill">Scikit-learn</span>
+            <span class="badge bg-secondary badge-pill">LangChain</span>
+            <br>
+            <button class="link read-more-btn mt-3" data-bs-toggle="collapse" data-bs-target="#SRSExtraction">
+              Read More
+            </button>
+            <div class="collapse mt-3" id="SRSExtraction">
+              <ul class="text-start list-unstyled">
+                <li>• Extracts key parameters from SRS documents using ML & NLP.</li>
+                <li>• Automates requirement categorization with text classification.</li>
+                <li>• Includes Chatbot using LangChain for clarifying unclear SRS requirements</li>
+                <li>• Technologies: Python, PyMuPDF, NLP, LangChain, Scikit-learn</li>
+                <li class="mt-2">
+                  <a href="https://github.com/Prem954/Software-Requirement-Specification-Document-Analysis-and-Parameter-Identification-Using-ML" target="_blank" class="source-code-link">
+                    <i class="bi bi-github"></i> View Source Code
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>      
+
+<!-- ShieldPass - Secure Password Storage with Real-Time Breach Warnings -->
+<div class="post col-md-6 cyber all col-10 mt-4" data-aos="fade-up">
+  <div class="card">
+    <img src="images/ShieldPass.jpg" class="card-img-top" alt="ShieldPass" style="height: 250px; object-fit: cover;">
+    <div class="card-body text-center">
+      <h4 class="card-title">ShieldPass: Secure Password Storage with Real-Time Breach Warnings</h4>
+      <span class="badge bg-secondary badge-pill">Python</span>
+      <span class="badge bg-secondary badge-pill">Tkinter</span>
+      <span class="badge bg-secondary badge-pill">SQLite</span>
+      <span class="badge bg-secondary badge-pill">Fernet Encryption</span>
+      <span class="badge bg-secondary badge-pill">Have I Been Pwned API</span>
+      <br>
+      <button class="link read-more-btn mt-3" data-bs-toggle="collapse" data-bs-target="#ShieldPass">
+        Read More
+      </button>
+      <div class="collapse mt-3" id="ShieldPass">
+        <ul class="text-start list-unstyled">
+          <li>• Offline password manager that securely encrypts and stores credentials.</li>
+          <li>• Integrates Have I Been Pwned API to check for password breaches in real time.</li>
+          <li>• Built-in GUI using Tkinter for easy password management and retrieval.</li>
+          <li>• Maintains an activity log for breach alerts, saves, and retrieval attempts.</li>
+          <li>• Technplogy Used: Python, SQLite, Cryptography, Requests, Tkinter, Logging.</li>
+          <li class="mt-2">
+            <a href="https://github.com/Prem954/ShieldPass-Secure-Password-Storage-with-Real-Time-Breach-Warnings" target="_blank" class="source-code-link">
+              <i class="bi bi-github"></i> View Source Code
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+</section>
+<!-- portfolio section ends here -->
+
+    <!-- Research section starts -->
+<section class="research py-5" id="research">
+  <div class="heading text-center mb-5">
+    <small>Academic Contributions</small>
+    <h3>Papers & Publications</h3>
+  </div>
+
+  <div class="container-fluid px-lg-5 px-md-3 px-sm-2">
+    <div class="row justify-content-center align-items-center g-4">
+      
+      <!-- Publication 1: AgriRec -->
+      <div class="col-12 col-md-6 col-lg-6" data-aos="fade-up">
+        <div class="publication-card">
+          <div class="publication-year">2025</div>
+          <h4>AgriRec: Decision Tree-Based Agricultural Crop Recommendation with Web Platform Integration</h4>
+          <div class="publication-venue">IEEE INOACC- 2025</div>
+          <p class="publication-description">
+            • Developed a web-based system using Gradient Boosting (98.37% accuracy) on the UCI Heart Disease dataset, integrating a trained model for real-time diagnosis and preventive recommendations.
+          </p>
+        </div>
+      </div>
+
+      <!-- Publication 2: CardioVisionary -->
+      <div class="col-12 col-md-6 col-lg-6" data-aos="fade-up">
+        <div class="publication-card">
+          <div class="publication-year">2025</div>
+          <h4>CardioVisionary: Boosting Based Cardiac Disease Prediction using ML Techniques</h4>
+          <div class="publication-venue">IEEE INOACC- 2025</div>
+          <p class="publication-description">
+            • Developed a web-based system for cardiovascular disease prediction using the UCI Heart Disease dataset (920 samples, 16 attributes). Gradient Boosting achieved 98.37% accuracy, and the trained model was integrated into a user-friendly platform with HTML, CSS, and JavaScript for real-time diagnosis and preventive recommendations.
+          </p>
+        </div>
+      </div>
+
+      <!-- Publication 3: SRS Analysis -->
+      <div class="col-12 col-md-6 col-lg-6" data-aos="fade-up">
+        <div class="publication-card">
+          <div class="publication-year">2025</div>
+          <h4>Software Requirement Specification Document 
+            Analysis and Identification of Important Parameters 
+            for Development through Machine Learning</h4>
+          <div class="publication-venue">IEEE <INOACC-2025></INOACC-2025></div>
+          <p class="publication-description">
+            • Automated SRS document analysis using TF-IDF and SVM on 94 records, integrating PDF text extraction and a Flask-based chatbot with LangChain for classification assistance, reducing manual effort and improving accuracy.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Research section ends -->
+
+
+    <!-- contact section starts -->
+<section class="contact py-5" id="contact">
+  <div class="heading text-center">
+    <small>Get in Touch</small>
+    <h3>Any Questions? Feel Free to Contact</h3>
+  </div>
+  <div class="row justify-content-evenly mt-5">
+    <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-geo-alt-fill"></i>
+        </div>
+        <div class="col-11">
+          <p>
+            <a href="https://www.google.com/maps/place/Rauniyar+Niwas/@26.4548018,87.2827369,900m/data=!3m2!1e3!4b1!4m6!3m5!1s0x39ef750052a8771f:0x608018486f6bc22b!8m2!3d26.454797!4d87.2853172!16s%2Fg%2F11mcb8xzd9?entry=ttu" target="_blank">
+              Rauniyar Niwas, Siddhartha Chowk, Biratnagar, Nepal
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-telephone-fill"></i>
+        </div>
+        <div class="col-11">
+          <p>
+            <a href="tel:+9779804010677">+977 9804010677</a> /
+            <a href="tel:+918294699972">+91 8294699972</a>
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-send-fill"></i>
+        </div>
+        <div class="col-11">
+          <p>
+            <a href="mailto:premrauniyar2019@gmail.com">premrauniyar2019@gmail.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-linkedin"></i>
+        </div>
+        <div class="col-11">
+          <p>
+            <a href="https://www.linkedin.com/in/premrauniyar" target="_blank">premrauniyar</a>
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-facebook"></i>
+        </div>
+        <div class="col-11">
+          <p>
+            <a href="https://www.facebook.com/itsprem12" target="_blank">itsprem12</a>
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-instagram"></i>
+        </div>
+        <div class="col-11">
+          <p>
+            <a href="https://www.instagram.com/its_prem12" target="_blank">its_prem12</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+      <div class="contact-form">
+        <form id="contactForm" onsubmit="return submitForm(event)">
+          <div class="mb-3">
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              placeholder="Name"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              placeholder="E-mail"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="tel"
+              name="phone"
+              class="form-control"
+              placeholder="Mobile No."
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <textarea
+              class="form-control"
+              name="message"
+              placeholder="Message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- contact section ends here -->
+
+
+
+
+    <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <hr class="text-muted my-4" />
+      <p>Copyright 2025 Prem | All Rights Reserved.</p>
+    </footer>
+    <!-- footer section ends here -->
+
+    <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+
+    <!-- Add this modal for the thank you message -->
+    <div class="modal fade" id="thankYouModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body text-center py-4">
+            <i class="bi bi-check-circle text-success" style="font-size: 3rem;"></i>
+            <h4 class="mt-3" style="color: #3f396d;">Thank You!</h4>
+            <p class="text-muted">Your message has been sent successfully.</p>
+            <button type="button" class="c-btn h-btn py-2 px-4 rounded-pill" data-bs-dismiss="modal">
+              Okay
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
